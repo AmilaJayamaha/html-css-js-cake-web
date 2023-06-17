@@ -1,63 +1,146 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Cake Website</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="script.js"></script>
+  <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header-heading {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <h1>Welcome to the Cake World!</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1 class="header-heading">Welcome to the Cake World!</h1>
+    <!-- Rest of the header code -->
   </header>
 
-  <section id="home">
-    <h2>Delicious Cakes</h2>
-    <p>Welcome to our cake website! We offer a wide variety of delicious cakes for every occasion.</p>
-  </section>
+  <body>
+    <header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are passionate about baking and creating beautiful and tasty cakes. Our experienced team of bakers uses only the finest ingredients to deliver the best cakes to our customers.</p>
-  </section>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section id="gallery">
-    <h2>Cake Gallery</h2>
-    <div class="cake-item">
-      <img src="cake1.jpg" alt="Cake 1">
-      <h3>Chocolate Cake</h3>
-      <p>A rich and moist chocolate cake layered with smooth chocolate ganache.</p>
-    </div>
-    <div class="cake-item">
-      <img src="cake2.jpg" alt="Cake 2">
-      <h3>Strawberry Cake</h3>
-      <p>Delicious strawberry cake filled with fresh strawberries and whipped cream.</p>
-    </div>
-    <!-- Add more cake items here -->
-  </section>
+    <section id="home">
+      <h2>Delicious Cakes</h2>
+      <p>Welcome to our cake website! We offer a wide variety of delicious cakes for every occasion.</p>
+    </section>
+    <section id="gallery">
+      <h2>Cake Gallery</h2>
+      <div class="cake-item">
+        <img src="cake1.jpg" alt="Cake 1">
+        <h3>Chocolate Cake</h3>
+        <p>A rich and moist chocolate cake layered with smooth chocolate ganache.</p>
+      </div>
+      <div class="cake-item">
+        <img src="cake2.jpg" alt="Cake 2">
+        <h3>Strawberry Cake</h3>
+        <p>Delicious strawberry cake filled with fresh strawberries and whipped cream.</p>
+      </div>
+      <div class="cake-item">
+        <img src="cake3.jpg" alt="Cake 3">
+        <h3>Vanilla Cake</h3>
+        <p>Classic vanilla cake with fluffy vanilla buttercream frosting.</p>
+      </div>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+      <div class="cake-item">
+        <img src="cake4.jpg" alt="Cake 4">
+        <h3>Red Velvet Cake</h3>
+        <p>Velvety red cake layers with cream cheese frosting, a perfect combination.</p>
+      </div>
 
-  <footer>
-    <p>&copy; 2023 Cake World. All rights reserved.</p>
-  </footer>
-</body>
+      <div class="cake-item">
+        <img src="cake5.jpg" alt="Cake 5">
+        <h3>Carrot Cake</h3>
+        <p>Moist carrot cake loaded with nuts and spices, topped with cream cheese frosting.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are passionate about baking and creating beautiful and tasty cakes. Our experienced team of bakers uses only
+        the finest ingredients to deliver the best cakes to our customers.</p>
+
+      <h3>Why choose us?</h3>
+      <ul>
+        <li>Wide variety of cake flavors</li>
+        <li>High-quality ingredients</li>
+        <li>Experienced team of bakers</li>
+        <li>Custom cake designs</li>
+        <li>On-time delivery</li>
+      </ul>
+      <h3>Sales Data</h3>
+      <table>
+        <tr>
+          <th>Year</th>
+          <th>Total Sales</th>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Rs.50,000</td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td>Rs.80,000</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Rs.100,000</td>
+        </tr>
+      </table>
+
+      <ul>
+        <ul class="social-media-links">
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.youtube.com">YouTube</a></li>
+          <li><a href="https://www.tiktok.com">TikTok</a></li>
+          <li><a href="https://www.reddit.com">Reddit</a></li>
+
+        </ul>
+    </section>
+
+
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Cake World. All rights reserved.</p>
+    </footer>
+  </body>
+
 </html>
